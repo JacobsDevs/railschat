@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
 	get "chat", to: "chat#index"
+	get "chat/friends", to: "chat#friends"
+	get "chat/chats", to: "chat#chats"
   # Defines the root path route ("/")
   # root "posts#index"
 end
